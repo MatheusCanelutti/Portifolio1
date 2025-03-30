@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="form.css">
+    <script type="module" src="form.js" defer></script>
+</head>
+<body>
+
+    <!-- 
+        ARRUMAR CEP!!!!!!!!
+
+
+     -->
+    <header id="header">
+        <nav id="navbar">
+            <a href="index.html"><img class="logo" src="img/logo.svg" alt="logo"></a>
+    </header>
+    <form id="form-produtos" class="form-produtos" action="#">
+        <h1>Cadastro de Produtos</h1>
+
+        <div>
+            <label for="product-name">Nome do Produto:</label>
+            <input type="text" name="product-name" id="product-name" placeholder="Digite o nome do produto" required maxlength="60">
+        </div>
+
+        <div id="UpImagens">
+           
+            <div class="imageContainer">
+                <label id="labelImg" for="">1°Img:</label>
+                <label for="img1"><img id="photo1" src="registro.png" alt=""></label>
+                <input type="file" id="img1"></input>
+            </div>
+            <div class="imageContainer">
+                <label id="labelImg" for="">2°Img:</label>
+                <label for="img2"><img id="photo2" src="registro.png" alt=""></label>
+                <input type="file" id="img2"></input>
+            </div>
+            <div class="imageContainer">
+                <label id="labelImg" for="">3°Img:</label>
+                <label for="img3"><img id="photo3" src="registro.png" alt=""></label>
+                <input type="file" id="img3"></input>
+            </div>
+           
+        </div>
+
+        <div>
+            <label for="iest">Categoria:</label>
+            <select name="est" id="iest">
+                <option value="Select">Selecione</option>
+                <option value="Moveis" id="moveis-selection">Móveis</option>
+                <option value="Eletrodomesticos" id="eletrodom-selection">Eletrodomésticos</option>
+                <option value="Eletronicos" id="eletronico-selection">Eletrônicos</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="description-product">Descrição:</label>
+            <textarea name="description-product" id="description-product" cols="5" rows="5" placeholder="Descrição" maxlength="200">
+            </textarea>
+        </div>
+
+        <div>
+            <label for="cep-product">CEP:</label>
+            <input type="number" name="cep-product" id="cep-product" placeholder="00000-000" required autocomplete="on">
+        </div>
+
+        <div>
+            <label for="street-product">Rua:</label>
+            <input type="text" name="street-product" id="street-product" placeholder="Endereço">
+        </div>
+
+        <div>
+            <label for="number-street-product">Número:</label>
+            <input type="text" name="number-street-product" id="number-street-product" placeholder="Número" required autocomplete="on">
+        </div>
+
+        <div>
+            <label for="neighborhood-product">Bairro:</label>
+            <input type="text" name="neighborhood-product" id="neighborhood-product" placeholder="Bairro">
+        </div>
+
+        <div>
+            <label for="contact-product">Contato:</label>
+            <input type="tel" name="contact-product" id="contact-product" pattern="^[0-9]{4}-[0-9]{4}$" 
+            placeholder="(xx)-xxxxx-xxxx" required autocomplete="on">
+            <button id="register-product">Cadastrar</button>
+        </div>
+
+    </form>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="../../script/src/controllers/firebase-init.js"></script>
+    <script src="../../script/src/cadastroProduto.js"></script>
+</body>
+</html>

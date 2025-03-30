@@ -1,0 +1,118 @@
+#home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: var(--font-body);
+    background-image: url('../../img/background-home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .layout {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+}
+
+#home .layout .column-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    color: var(--gray);
+}
+
+#home .layout .column-layout h1 {
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#home .layout .column-layout a {
+    text-decoration: underline;
+    color: var(--black);
+    font-weight: 600;
+}
+
+@media (max-width: 840px) {
+    #home .layout {
+        width: 70%;
+        padding: 0px 100px;
+    }
+    #home .layout .column-layout h1 {
+        font-size: 3.5em;
+    }
+    #home .layout .column-layout h3 {
+        font-size: 1.5em;
+    }
+    #home .layout .column-layout a {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 500px) {
+    #home .layout {
+        width: 100%;
+        padding: 0px 100px;
+    }
+    #home .layout .column-layout h1 {
+        font-size: 2.5em;
+    }
+    #home .layout .column-layout h3 {
+        font-size: 1em;
+        color: var(--white);
+        text-shadow: 1px 1px var(--black);
+
+    }
+    #home .layout .column-layout a {
+        font-size: 1em;
+        color: var(--white);
+        text-shadow: 1px 1px var(--black);
+    }
+}
+
+@media (max-width: 400px) {
+     #home .layout {
+        width: 100%;
+        padding: 0px 100px;
+    }
+    #home .layout .column-layout h1 {
+        font-size: 1.5em;
+    }
+    #home .layout .column-layout h3 {
+        font-size: 1em;
+        color: var(--white);
+        text-shadow: 1px 1px var(--black);
+
+    }
+    #home .layout .column-layout a {
+        font-size: 1em;
+        color: var(--white);
+        text-shadow: 1px 1px var(--black);
+    } 
+}
+
+
+@media (max-width: 360px) {
+     #home .layout {
+        width: 100%;
+        padding: 50px 100px;
+    }
+    #home .layout .column-layout h1 {
+        font-size: 1.2em;
+    }
+    #home .layout .column-layout h3 {
+        font-size: .7em;
+        color: var(--white);
+        text-shadow: 1px 1px var(--black);
+    }
+    #home .layout .column-layout a {
+        font-size: .7em;
+        color: var(--white);
+        text-shadow: 1px 1px var(--black);
+    } 
+}

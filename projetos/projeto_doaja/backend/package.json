@@ -1,0 +1,15 @@
+{
+  "name": "doaja",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "site de doação de móveis e eletrodomesticos",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon backend/index.js"
+  },
+  "author": "Kenji",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

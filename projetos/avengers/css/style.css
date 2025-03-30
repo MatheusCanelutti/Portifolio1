@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        font-family: sans-serif;
+    }
+    header{
+        background-color: rgb(7, 7, 7);
+        padding: 8px 24px;
+        
+        align-items: center;
+        display: flex;  /* deixa flexivel, flutuando, tira o display block */
+        flex-wrap: wrap;
+        justify-content: space-around; /* coloca espaçamento em todos os itens */
+        row-gap: 8px; /*espaço entre as linhas*/
+        column-gap: 8px; /*espaço entre as colunas */
+    }
+    
+    
+    header > img{
+        width: 180px;
+    }
+    
+    header ul{
+        list-style: none;
+        display: flex;
+    }
+    
+    header ul li + li{ /*coloca margin apenas na li que possuí itens ao lado*/
+        margin-left: 24px;
+    }
+    
+    header  a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.6s; /* tempo que demora para mudar de branco para vermelho*/
+    }
+    
+    header a:hover{ /*captura quando o mouse passa em cima da lista e muda a cor*/
+        color: #f13239;
+    }
+    
+    /*----------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .hero{
+        padding: 16px;  /*espçamento interno*/
+        height: 320px;
+    
+        background-image: url(../images/banner.jpg);
+        background-size: cover; /*garantir que a imagem de fundo preencha completamente o espaço disponível, sem distorções, */
+        background-position: center 25%; /* corta a imagem de cima,embaixo e dos lados para o centro */
+       
+        display: flex;
+        flex-direction: column; /* ele é flexivel mas invés de ser o padrão, um do lado do outro, é em colunas */
+       justify-content: flex-end; /*flexível e vai para o fim, flex-start ficaria em cima pois é o começo */
+       align-items: center; 
+    }
+    
+    .hero h1{
+        color: white;
+       font-size: 36px;
+    }
+    .dots{
+        margin-top: 24px;
+       display: flex;
+    
+    }
+    .dots span{  /* span é inline por padrão*/
+        display: block; /* em blocos*/
+       background-color: white;
+    
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    
+        cursor: pointer;
+    }
+    
+    .dots span + span {
+        margin-left: 8px;
+    }
+    
+    .dots .ativo{
+        background-color: #f13239;
+    }
+    
+    
+    /*---------------------------------------------------------------------------------------------------------------------------------------*/
+    .galeria{
+       max-width:  1200px; /*largura maxíma dela*/
+       margin: 64px auto 0; /* 64px de cima embaixo, auto dos lados, e 0 embaixo */
+       padding: 0 24px; /* emcima e embaixo 0 dos lados 24px*/
+    }
+    
+    .galeria h2{
+        margin-bottom: 32px; /* margem de baixo do h2*/
+        border-left: 4px solid  #f13239 ; /* colocar a borda vermelha no h2 */
+        padding-left: 10px;
+    }
+    
+    .galeria_img {
+      display: flex;
+      flex-wrap: wrap; /* Permite quebrar a linha quando não cabe mais iamgens na tela*/
+      gap: 24px; /*espeçamento de uma imagem para outra */
+    }
+    
+    .galeria p{
+        font-weight: bold;
+    }
+    
+    .galeria_img div{
+      flex: 1 1 250px;
+    }
+    .galeria_img img{
+        width: 100%; /*ficar dinamico vai sempre aparecer a imagem toda*/
+        border-radius: 8px;
+        margin-bottom: 16px; /* margem embaixo da imagem*/
+    }
+    
+/*---------------------------------------------------------------------------------------------------------------------------------*/    
+  
+  .historia {
+    margin: 64px 0 0;
+    padding: 92px 24px 0; /* margem interna de 92 emcima e embaixo e 24px dos lados */
+  
+    background-color: #111111;
+    color: #ebebeb;
+  
+    border-top: 4px solid #f13239;
+  }
+  
+  .historia .container {
+    max-width: 1200px; /* ocupa 1200px da tela */
+    margin: 0 auto;
+  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px; /* espaçamento entre os dois containers */
+  
+    border-bottom: 2px solid #f13239;
+  }
+  
+  .historia .container .coluna {
+    flex: 1 1 350px; /* a imagem estica que seria o 1 1 e começa com 350px */
+  }
+  
+  .historia img {
+    width: 100%;
+    display: block; /*descer a imagem */
+  }
+  
+  .historia h2 {
+    margin-bottom: 32px;
+    padding-left: 8px; /*8 margem interna embaixo */
+    border-left: 4px solid #f13239;
+  }
+  
+  .historia p {
+    line-height: 1.5; /*espaço entre as linhas do paragrafo */
+  }
+  
+  .historia p + p { /* só coloca a margem se tiver um paragrafo antes */
+    margin-top: 24px;
+  }
+  
+  .historia a {
+    color: #f13239;
+    transition: color 0.3s; /* coloca o transition aonde começou por isso não pode colocar no hover */
+  }
+  
+  .historia a:hover {
+    color: #ebebeb;
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+
+  footer{
+    padding: 64px 24px;
+    background-color: #111111;
+    color: #ebebeb;
+    text-align: center;
+  }
+
+  footer a{
+    color: #f13239;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+ footer a:hover{
+  color: #ebebeb;
+ }

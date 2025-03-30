@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doaja | Escolha</title>
+    
+    <link rel="stylesheet" href="../../style/index.css">
+    <link rel="shortcut icon" href="../../img/logo.svg" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+</head>
+<body id="choose-page">
+    <div class="ui center aligned container" id="choose-card-container">
+        <div class="ui special cards">
+            <div class="card">
+              <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                        <a href="../form-produtos/form.html" target="_self" class="ui inverted button">Doar</a>
+                    </div>
+                  </div>
+                </div>
+                <img src="../../img/img-doar.jpg" class="choose-img">
+              </div>
+              <div class="content">
+                <a class="header">Doar</a>
+                <div class="meta">
+                  <span class="date">Doe móveis e faça a diferença!</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <a href="../catalog/catalog.html" target="_self" class="ui inverted button">Receber</a>
+                    </div>
+                  </div>
+                </div>
+                <img src="../../img/img-receber.jpg" class="choose-img">
+              </div>
+              <div class="content">
+                <a class="header">Receber</a>
+                <div class="meta">
+                  <span class="date">Dê match agora!</span>
+                </div>
+              </div>
+            </div>
+    </div>
+
+    <script>
+        // $('.special.cards .image').dimmer({
+        //     on: 'hover'
+        // });
+        if (typeof jQuery !== 'undefined') {
+        $(document).ready(function() {
+            if (typeof $.fn.dimmer === 'function') {
+                $('.special.cards .image').dimmer({
+                    on: 'hover'
+                });
+            } else {
+                console.error('Dimmer function not found. Make sure Semantic UI JS is properly included.');
+            }
+        });
+    } else {
+        console.error('jQuery not found. Make sure jQuery is properly included.');
+    }
+    </script>
+</body>
+</html>

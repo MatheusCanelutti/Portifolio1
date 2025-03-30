@@ -1,0 +1,39 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    background-color: rgb(7, 7, 7);
+    
+    align-items: center;
+    display: flex;  /* deixa flexivel, flutuando, tira o display block */
+    justify-content: space-around; /* coloca espaçamento em todos os itens */
+}
+
+
+header > img{
+    width: 180px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li{ /*coloca margin apenas na li que possuí itens ao lado*/
+    margin-left: 24px;
+}
+
+header  a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.6s; /* tempo que demora para mudar de branco para vermelho*/
+}
+
+header a:hover{ /*captura quando o mouse passa em cima da lista e muda a cor*/
+    color: #f13239;
+}

@@ -1,0 +1,230 @@
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    background-color: transparent;
+    color: var(--gray);
+    font-family: var(--font-navbar);
+    font-weight: 800;
+    transition: .5s;
+}
+
+#navbar.scrolling {
+    background-color: var(--navbar);
+}
+
+#navbar .navbar-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+#navbar .navbar-content li a {
+    text-decoration: none;
+    color: var(--gray);
+    transition: 0.1s ease-in-out;
+}
+
+#navbar .navbar-content li a:hover {
+    border-bottom: 2px solid var(--gray);
+}
+
+#navbar .navbar-content li a:active {
+    border-bottom: 2px solid var(--gray);
+}
+
+/* Config Buttons */
+
+#navbar .login-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+#navbar .login-navbar #login-navbar {
+    cursor: pointer;
+    transition: .2s ;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+#navbar .login-navbar #login-navbar:hover {
+    color: var(--green);
+}
+
+#navbar .login-navbar #register-navbar {
+    border: 1px solid var(--green);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+#navbar .login-navbar #register-navbar:hover {
+    background-color: var(--green);
+    color: var(--gray-background);
+}
+
+
+/* Config NavbarMobile */
+#navbar-mobile {
+    display: none;
+}
+
+.navbar-container {
+    display: none;
+}
+
+/* Media */
+
+@media (max-width: 500px) {
+    #navbar {
+        display: none;
+    }
+
+    #navbar-mobile .navbar-content, .login-navbar {
+        display: none;
+    }
+
+    #navbar-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: transparent;
+        color: var(--gray);
+        font-family: var(--font-navbar);
+        font-weight: 800;
+        transition: .5s ease;
+    }
+
+    #navbar-mobile .logo {
+        height: 90px;
+        width: 90px;
+    }
+
+    /* Config open sidebar */
+    
+    #navbar-mobile .burguer {
+        position: relative;
+        cursor: pointer;
+    }
+
+    #navbar-mobile .navbar-container.open {
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+        opacity: 1;
+        height: 100vh;
+        z-index: 3;
+        
+        background-color: var(--navbar);
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        transition: 0.5s all;
+    }
+
+    .closeMenu {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+      
+        z-index: 2;
+        transition: 0.5 all;
+    }
+
+    .isClose {
+        display: none;
+    }
+
+    #navbar-mobile .navbar-container.open .navbar-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 1rem;
+
+        padding: 20px;
+    }
+
+    /* Button burguer */
+    #navbar-mobile .button-burguer {
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+    }
+    #navbar-mobile .button-close {
+        background-color: inherit;
+        border: none;
+        justify-self: center;
+        align-self: flex-end;
+        padding: 20px;
+        cursor: pointer;
+    }
+    /* --- */
+
+    #navbar-mobile .navbar-container .navbar-content li {
+        list-style-type: none;
+    }
+    #navbar-mobile .navbar-container .navbar-content li a {
+        text-decoration: none;
+        color: var(--gray);
+        font-family: var(--font-navbar);
+    }
+
+    /* config buttons */
+    #navbar-mobile .navbar-container.open .login-navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+        margin-top: 1.5rem;
+        list-style-type: none;
+    }
+    #navbar-mobile .navbar-container .login-navbar #register-navbar {
+        border: 1px solid var(--green);
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.2s ease-in-out;
+        color: var(--gray);
+        font-family: var(--font-navbar);
+    }
+    #navbar-mobile .navbar-container .login-navbar #login-navbar {
+        cursor: pointer;
+        transition: 0.2s all;
+        text-decoration: none;
+        color: var(--gray);
+        font-family: var(--font-navbar);
+    }
+
+    #navbar-mobile .navbar-container .login-navbar #login-navbar:hover {
+        color: var(--green);
+    }
+    #navbar-mobile .navbar-container .login-navbar #register-navbar:hover {
+        background-color: var(--green);
+        color: var(--gray-background);
+    }
+}

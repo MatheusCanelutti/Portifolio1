@@ -1,0 +1,125 @@
+*{
+    font-family: bold;
+}
+
+/*cores da navbar*/
+.navbar {
+    background-color: #555555;
+    border-bottom: 3px solid rgb(11, 2, 40);
+  
+}
+/* estilo do nome da navbar*/
+.navbar-brand{
+    width: 60px; 
+    font-size: 1.5rem;
+}
+/*icones das imagens*/
+.icones_rs a img{
+    width: 32px; 
+    height: 32px; 
+}
+/* imagens do menu hamburguer*/
+.img_menu_hambuger a img{
+    width: 32px; 
+    height: 32px;
+   
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255); /* Altera a cor do texto ao passar o mouse */ 
+    transition: color 0.4s; /* Suaviza a transição */
+}
+
+.container h1{
+    color: #908404;
+    pointer-events: none; /* Evita que seja tratado como um link */
+}
+/*--------------------------------menu-----------------------------------------*/
+
+.img_fundo_texto {
+    background: url('../Imagens/fundo.avif');
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    min-height: 100vh; /* estava com erro por ser height apenas, que seria 100% da tela mas caso ela se expanda a imagem nao ia 
+    cobrir por ser mais que 100%, o min-height é a imagem cobrir no minimo 100% se a tela ficar maior irá se expandir*/
+    width: 100%;
+
+   
+}
+/*-------------------------------------------------imagem de fundo---------------------------*/
+
+.img_fundo_texto section{
+    display: flex;
+    flex-direction: column; /* Mantém o título e os cards embaixo do outro */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    color: #908404;
+}
+/* -------------------------------------titulo e subtitulo------------------------------------*/
+
+/* Estilo geral dos cards */
+.Projetos_design{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaço entre os cards */
+}
+
+.Projetos_design .card {
+    width: 320px;            /* Define a largura do card */
+    height: 320px;            /* A altura será ajustada conforme o conteúdo */
+    margin: 20px;            /* Espaço entre os cards */   
+    overflow: hidden;        /* Evita que o conteúdo transborde */
+    text-align: center;      /* Centraliza o texto no card */
+    border: 3px solid #908404;
+}
+
+.card-img-top{
+    border-bottom: 3px solid #908404;
+}
+
+/* Estilo do corpo do card */
+.Projetos_design .card-body {
+    padding: 5px;           /* Espaçamento interno ao redor do conteúdo */
+}
+
+.Projetos_design .card-body p{
+font-size: 14px;
+}
+
+/*botoes para ir para os projetos*/
+
+.Projetos_design .card .btn-primary {
+    background-color: #555555; /* Cor padrão do botão */
+    border: none;
+    color: #908404;
+    padding: 10px 20px; /* Botão um pouco maior */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 18px; /* Cantos mais arredondados */
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse */
+.Projetos_design .card .btn-primary:hover {
+    background-color: #939393; /* Cor mais escura no hover */
+    transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+/* Efeito ao clicar */
+.Projetos_design .card .btn-primary:active {
+    background-color: #878787;
+    transform: scale(0.98); /* Pequena redução no clique */
+}
+
+
+
+
+
+
+
+

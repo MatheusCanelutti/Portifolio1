@@ -1,0 +1,80 @@
+*{
+    font-family: bold;
+}
+
+/*cores da navbar*/
+.navbar {
+    background-color: #555555;
+    border-bottom: 3px solid rgb(11, 2, 40); 
+  
+}
+/* estilo do nome da navbar*/
+.navbar-brand{
+    width: 60px; 
+    font-size: 1.5rem;
+}
+/*icones das imagens*/
+.icones_rs a img{
+    width: 32px; 
+    height: 32px; 
+}
+/* imagens do menu hamburguer*/
+.img_menu_hambuger a img{
+    width: 32px; 
+    height: 32px;
+}
+/*estilos da imagem de fundo e texto*/
+.img_fundo_texto {
+    background: url('./Imagens/fundo.avif');
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    height: 100vh; /* Define 100% da altura da tela */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*animação no nome*/
+
+/* Define uma animação chamada "floatText" */
+@keyframes floatText {
+    0% { transform: translateY(0); }  /* Posição inicial (sem movimento) */
+    50% { transform: translateY(-15px); } /* Texto sobe 10px */
+    100% { transform: translateY(0); } /* Volta à posição original */
+}
+
+/* Aplica a animação ao título (h1) e ao parágrafo (p) dentro da div .container */
+.container h2, 
+.container p {
+    animation: floatText 2s ease-in-out infinite; /* Animação de 2 segundos, contínua */
+    color: #908404;
+}
+
+.container h1{
+    color: #908404;
+    pointer-events: none; /* Evita que seja tratado como um link */
+}
+
+
+/* Removendo o estilo desnecessário da section */
+.img_fundo_texto section {
+    width: 100%;
+}
+
+/*imagens do home*/
+.img_fundo_texto section div img{
+  position: relative;
+  top: -50px;  /*  Sobe a imagem na tela  top -50px */
+  border: 3px solid #908404;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255); /* Altera a cor do texto ao passar o mouse */ 
+    transition: color 0.4s; /* Suaviza a transição */
+}
+/* menu */
+
+

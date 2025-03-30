@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doaja | Home</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <script src="script/navbar.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="header">
+        <nav id="navbar">
+            <a href="index.html"><img class="logo" src="img/logo.svg" alt="logo"></a>
+            
+            <ul class="navbar-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#process">Negócio</a></li>
+            </ul>
+        
+        
+            <div class="login-navbar">
+                <a href="pags/login/login.html" target="_blank" id="login-navbar">Login</a>
+                <a href="pags/login/register.html" target="_blank" id="register-navbar">Register</a>
+            </div>
+        </nav>
+        <nav id="navbar-mobile">
+            <a href="index.html"><img class="logo" src="img/logo.svg" alt="logo"></a>
+            <button id="burguer" class="button-burguer"><img src="img/icons/icon-menu.svg" alt="burguer" class="burguer"></button>
+            <div class="closeMenu isClose"></div>
+            <div class="navbar-container">
+                <button id="close-menu" class="button-close"><img src="img/icons/icon-close-menu.svg" alt="close" class="close-menu"></button>
+                <ul class="navbar-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#process">Negócio</a></li>
+                </ul>
+                <div class="login-navbar">
+                    <a href="pags/Login/login.html" target="_self" id="login-navbar">Login</a>
+                    <a href="pags/Login/register.html" target="_self" id="register-navbar">Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home">
+            <div class="layout">
+                <div class="column-layout">
+                    <h1>FAÇA E RECEBA DOAÇÕES AGORA!</h1>
+                    <h3>Localize as doações mais proximas <br> e receba de qualquer lugar da cidade de São Paulo!</h3>
+                    <a href="#about">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+        <!-- Sobre -->
+        <section id="about">
+            <div class="about-content">
+                <div class="img">
+                    <img src="img/doaja-verde-png.png" alt="doaja">
+                </div>
+                <div class="column-right">
+                    <h2>SOBRE</h2>
+                    <p>O nosso projeto consiste em disponibilizar uma plataforma para doações de móveis e eletrodomésticos, criando um ambiente que possa ajudar e atender a quem precisa, ao mesmo tempo preservando o meio ambiente e cuidando do nosso planeta!</p>
+                </div>
+            </div>
+        </section>
+        <!-- Doações -->
+        <section id="services">
+            <div class="services-content">
+                <div class="title">
+                    <h2>Serviços</h2>
+                    <p>
+                        Se o movel doado estiver em péssimas condições, não se preocupe. <br>
+                        No site te mostramos opções de técnicos especializados para concertar seus moveis, eletrodomesticos e eletronicos.
+                    </p>
+                </div>
+                <div class="services-cards">
+                    <div class="card">
+                        <img src="img/icons/eletrodomesticos.png" alt="icone de manutenção">
+                        <h3>Manutenção de Eletrodomésticos</h3>
+                        <p>
+                            Aqui ligamos você diretamente com um técnico para
+                            realizar a manutenção caso o dispositivo recebido
+                            esteja em mal estado.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="img/icons/ferramentas.png" alt="icone de manutenção">
+                        <h3>Manutenção de móveis</h3>
+                        <p>
+                            Aqui ligamos você diretamente com um técnico para
+                            realizar a manutenção caso o móvel recebido
+                            esteja em mal estado.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="img/icons/computador.png" alt="icone de manutenção">
+                        <h3>Manutenção de eletrônicos</h3>
+                        <p>
+                            Aqui ligamos você diretamente com um técnico para
+                            realizar a manutenção caso o dispositivo recebido
+                            esteja em mal estado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process">
+            <div class="process-content">
+                <div class="title">
+                    <h2>Como funciona?</h2>
+                    <p>
+                        O processo de doação acontece da seguinte maneira: <br>
+                        O doador posta seu item e o recebedor da um match. <br>
+                        Sugerimos opções de carretos e o recebedor escolhe se quer o carreto ou não. <br>
+                        O frete é pago pelo recebedor, e todo desenrolar da situação é resolvida com o carreto. <br>
+                        O site se mantém com 10% do frete.
+                    </p>
+                </div>
+                <div class="action">
+                    <div class="card">
+                        <img src="img/image-emily.jpg" alt="Recebedor(a)">
+                        <h3>Recebedor(a)</h3>
+                    </div>
+                    <div class="row"></div>
+                    <div class="card">
+                        <img src="img/image-thomas.jpg" alt="Doador(a)">
+                        <h3>Carreto</h3>
+                    </div>
+                    <div class="card">
+                        <img src="img/image-jennie.jpg" alt="Carreto">
+                        <h3>Doador(a)</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

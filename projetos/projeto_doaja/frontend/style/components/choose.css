@@ -1,0 +1,21 @@
+#choose-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../../img/background-login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#choose-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.choose-img {
+    width: 100%;
+}

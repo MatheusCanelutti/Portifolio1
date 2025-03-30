@@ -1,0 +1,119 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    background-color: rgb(7, 7, 7);
+    
+    align-items: center;
+    display: flex;  /* deixa flexivel, flutuando, tira o display block */
+    justify-content: space-around; /* coloca espaçamento em todos os itens */
+}
+
+
+header > img{
+    width: 180px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li{ /*coloca margin apenas na li que possuí itens ao lado*/
+    margin-left: 24px;
+}
+
+header  a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.6s; /* tempo que demora para mudar de branco para vermelho*/
+}
+
+header a:hover{ /*captura quando o mouse passa em cima da lista e muda a cor*/
+    color: #f13239;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+.hero{
+    padding: 16px;  /*espçamento interno*/
+    height: 320px;
+
+    background-image: url(../images/banner.jpg);
+    background-size: cover; /*garantir que a imagem de fundo preencha completamente o espaço disponível, sem distorções, */
+    background-position: center 25%; /* corta a imagem de cima,embaixo e dos lados para o centro */
+   
+    display: flex;
+    flex-direction: column; /* ele é flexivel mas invés de ser o padrão, um do lado do outro, é em colunas */
+   justify-content: flex-end; /*flexível e vai para o fim, flex-start ficaria em cima pois é o começo */
+   align-items: center; 
+}
+
+.hero h1{
+    color: white;
+   font-size: 36px;
+}
+.dots{
+    margin-top: 24px;
+   display: flex;
+
+}
+.dots span{  /* span é inline por padrão*/
+    display: block; /* em blocos*/
+   background-color: white;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.dots span + span {
+    margin-left: 8px;
+}
+
+.dots .ativo{
+    background-color: #f13239;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+.galeria{
+   max-width:  1200px; /*largura maxíma dela*/
+   margin: 64px auto 0; /* 64px de cima embaixo, auto dos lados, e 0 embaixo */
+   padding: 0 24px; /* emcima e embaixo 0 dos lados 24px*/
+}
+
+.galeria h2{
+    margin-bottom: 32px; /* margem de baixo do h2*/
+    border-left: 4px solid  #f13239 ; /* colocar a borda vermelha no h2 */
+    padding-left: 10px;
+}
+
+.galeria_img {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar a linha quando não cabe mais iamgens na tela*/
+  gap: 24px; /*espeçamento de uma imagem para outra */
+}
+
+.galeria p{
+    font-weight: bold;
+}
+
+.galeria_img div{
+  flex: 1 1 250px;
+}
+.galeria_img img{
+    width: 100%; /*ficar dinamico vai sempre aparecer a imagem toda*/
+    border-radius: 8px;
+    margin-bottom: 16px; /* margem embaixo da imagem*/
+}
+
+
+

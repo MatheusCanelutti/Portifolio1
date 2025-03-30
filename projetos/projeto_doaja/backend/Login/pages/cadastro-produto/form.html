@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body class="centralize">
+    <<form action="#">
+        <h1>Cadastro de Produtos</h1>
+
+        <div>
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" name="" id="nome" placeholder="Digite o nome do produto" required maxlength="60">
+        </div>
+
+        <div id="UpImagens">
+           
+            <div class="imageContainer">
+                <label id="labelImg" for="">1°Img:</label>
+                <label for="img1"><img id="photo1" src="registro.png" alt=""></label>
+                <input type="file" id="img1"></input>
+            </div>
+            <div class="imageContainer">
+                <label id="labelImg" for="">2°Img:</label>
+                <label for="img2"><img id="photo2" src="registro.png" alt=""></label>
+                <input type="file" id="img2"></input>
+            </div>
+            <div class="imageContainer">
+                <label id="labelImg" for="">3°Img:</label>
+                <label for="img3"><img id="photo3" src="registro.png" alt=""></label>
+                <input type="file" id="img3"></input>
+            </div>
+           
+        </div>
+
+        <div>
+            <label for="iest">Categoria:</label>
+            <select name="est" id="iest">
+                <option value="Select">Selecione</option>
+                <option value="Moveis">Móveis</option>
+                <option value="Eletrodomesticos">Eletrodomésticos</option>
+                <option value="Eletronicos">Eletrônicos</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="descricao">Descrição:</label>
+            <textarea name="" id="descricao" cols="5" rows="5" placeholder="Descrição" maxlength="200">
+            </textarea>
+        </div>
+
+        <div>
+            <label for="txtcep">CEP:</label>
+            <input type="number" name="" id="txtcep" placeholder="00000-000" required autocomplete="on">
+        </div>
+
+        <div>
+            <label for="rua">Rua:</label>
+            <input type="text" name="" id="rua" placeholder="Endereço">
+        </div>
+
+        <div>
+            <label for="txtnum">Número:</label>
+            <input type="text" name="" id="txtnum" placeholder="Número" required autocomplete="on">
+        </div>
+
+        <div>
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="" id="bairro" placeholder="Bairro">
+        </div>
+
+        <div>
+            <label for="contato">Contato:</label>
+            <input type="tel" name="" id="contato" pattern="^[0-9]{4}-[0-9]{4}$" 
+            placeholder="(xx)-xxxxx-xxxx" required autocomplete="on">
+            <button id="cadastrar" onclick="cadastrarProduto()">Cadastrar</button>
+        </div>
+
+    </form>
+</body>
+
+<script src="config.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+
+
+</html>

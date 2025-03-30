@@ -1,0 +1,224 @@
+#process {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-body);
+}
+
+#process .process-content {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+#process .process-content .title {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+    color: var(--gray);
+    font-size: 1.5em;
+}
+
+#process .process-content .title h2 {
+    font-size: 2.2em;
+}
+
+#process .process-content .action {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+}
+
+#process .process-content .action .card {
+    text-align: center;
+    position: relative;
+}
+
+#process .process-content .action .row {
+    background-color: black;
+
+    height: 5px;
+    width: 50%;
+    border-radius: 5px;
+
+    position: absolute;
+    right: 24%;
+}
+
+#process .process-content .action .card:nth-child(3) {
+    margin-top: 200px
+}
+
+#process .process-content .action .card img {
+    height: 70px;
+    width: 70px;
+
+    border: 2px solid black;
+    border-radius: 50%;
+
+}
+
+@media (max-width: 850px) {
+    #process .process-content .action .row {
+        background-color: black;
+    
+        height: 5px;
+        width: 40%;
+        border-radius: 5px;
+    
+        position: absolute;
+        right: 250px;
+    }
+}
+@media (max-width: 800px) {
+    #process .process-content .action .row {
+        background-color: black;
+    
+        height: 5px;
+        width: 40%;
+        border-radius: 5px;
+    
+        position: absolute;
+        right: 220px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    
+    #process .process-content {
+        gap: 3rem;
+    }
+    
+    #process .process-content .title {
+        gap: 1.5rem;
+        font-size: .92em;
+    }
+    
+    
+    #process .process-content .action {
+        gap: 2rem;
+    }
+    
+    #process .process-content .action .card {
+        text-align: center;
+        position: relative;
+    }
+
+    #process .process-content .action .card h3 {
+        font-size: .7em;
+    }
+
+    #process .process-content .action .row {
+        right: 120px;
+    }
+    
+    #process .process-content .action .card:nth-child(3) {
+        margin-top: 150px
+    }
+
+    #process .process-content .action .card img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    #process .process-content .title {
+        gap: 1.5rem;
+        font-size: .8em;
+    }
+    
+    
+    #process .process-content .action {
+        gap: 1rem;
+    }
+
+    #process .process-content .action .card h3 {
+        font-size: .7em;
+    }
+
+    #process .process-content .action .row {
+        right: 120px;
+    }
+    
+    #process .process-content .action .card:nth-child(3) {
+        margin-top: 150px
+    }
+
+    #process .process-content .action .card img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 370px) { 
+    
+    #process .process-content .action {
+        gap: 1rem;
+    }
+
+    #process .process-content .action .card h3 {
+        font-size: .7em;
+    }
+
+    #process .process-content .action .row {
+        width: 30%;
+    }
+    
+}
+@media (max-width: 330px) {
+
+    #process .process-content {
+        gap: 1rem;
+    }
+
+    #process .process-content .title {
+        gap: 1rem;
+        font-size: .7em;
+        height: 30%;
+        justify-content: flex-end;
+    }
+    
+    #process .process-content .action {
+        gap: 2rem;
+        height: 30%;
+    }
+
+    #process .process-content .action .card h3 {
+        font-size: .7em;
+    }
+
+    #process .process-content .action .row {
+        right: 110px;
+        width: 30%;
+    }
+    
+    #process .process-content .action .card:nth-child(3) {
+        margin-top: 150px
+    }
+
+    #process .process-content .action .card img {
+        height: 40px;
+        width: 40px;
+    }
+}

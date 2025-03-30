@@ -1,0 +1,11 @@
+body {
+    height: 100vh;
+    background: rgb(203, 237, 217);
+}
+
+header {
+    text-align: right;
+}
+header button {
+    width: auto;
+}

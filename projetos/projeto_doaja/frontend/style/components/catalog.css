@@ -1,0 +1,130 @@
+/* Config donations page */
+#donations-page {
+    display: flex;
+    font-family: var(--font-body);
+}
+
+/* Sidebar catalog */
+#sidebar-donations {
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 14%;
+    height: 100vh;
+    padding: 30px;
+
+    background-color: var(--gray-background);
+}
+
+#sidebar-donations .sidebar-container .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    
+    font-family: var(--font-navbar);
+    font-weight: 700;
+    list-style-type: none;
+
+}
+
+#sidebar-donations .sidebar-container .sidebar-content li a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+/* Donations */
+
+#donations-container {
+    height: 100vh;
+    width: 100vw;
+    padding: 100px;
+    
+    display: flex;
+}
+
+#donations-container .card-donations-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 4rem;
+
+    height: 100%;
+    width: 100%;
+
+    margin-left: 200px;
+}
+
+#donations-container .card-donations-container .card-donations {
+    width: 300px;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+
+    flex-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    background-color: var(--gray-background);
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+#donations-container .card-donations-container .card-donations .address-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#donations-container .card-donations-container .card-donations .address-container #card-address {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+#donations-container .card-donations-container .card-donations:hover {
+    transform: scale(1.05);
+}
+
+#donations-container .card-donations-container .card-donations  .img-card-donation {
+    height: 300px;
+    width: 100%;
+}
+
+#donations-container .card-donations-container .card-donations  .button-match,
+#donations-container .card-donations-container .card-donations .match-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    
+    padding: 10px;
+    
+    cursor: pointer;
+    
+    transition: 0.2s ease-in-out;
+    
+    text-decoration: none;
+    background-color: inherit;
+    font-weight: 700;
+
+    width: 100%;
+}
+#donations-container .card-donations-container .card-donations  .button-match:hover,
+#donations-container .card-donations-container .card-donations .match-details:hover {
+    background-color: var(--green);
+    color: var(--white);
+}

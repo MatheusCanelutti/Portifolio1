@@ -1,0 +1,42 @@
+@import './components/header.css';
+@import './components/process.css';
+@import './components/services.css';
+@import './components/home.css';
+@import './components/login.css';
+@import './components/register.css';
+@import './components/about.css';
+@import './components/catalog.css';
+@import './components/match.css';
+@import './components/choose.css';
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --black: #181818;
+    --gray-background: #EBEAE6;
+    --gray: #666666;
+    --green: #30533c;
+    --green-doaja: #c1fabd;
+    --white: #fff;
+    --navbar: #e0e0e0;
+    --font-navbar: 'Domine', serif;
+    --font-body: 'Poppins', sans-serif;
+
+    --brown: #692217;
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 80%;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}

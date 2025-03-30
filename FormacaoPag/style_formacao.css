@@ -1,0 +1,155 @@
+
+*{
+    font-family: bold;
+}
+
+/*cores da navbar*/
+
+.navbar {
+    background-color: #555555;
+    border-bottom: 3px solid rgb(11, 2, 40);
+  
+}
+/* estilo do nome da navbar*/
+.navbar-brand{
+    width: 60px; 
+    font-size: 1.5rem;
+}
+/*icones das imagens*/
+.icones_rs a img{
+    width: 32px; 
+    height: 32px; 
+}
+/* imagens do menu hamburguer*/
+.img_menu_hambuger a img{
+    width: 32px; 
+    height: 32px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255); /* Altera a cor do texto ao passar o mouse */ 
+    transition: color 0.4s; /* Suaviza a transição */
+}
+
+.container h1{
+    color: #908404;
+     pointer-events: none; /* Evita que seja tratado como um link */
+    
+}
+/*--------------------------------menu-------------------------------*/
+
+/*--------------------------estilos da imagem de fundo------------------------------------*/
+.img_fundo_texto section {
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área disponível */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url('../Imagens/fundo.avif')
+
+}
+
+.img_fundo_texto section h1{
+    text-align: center;
+    color: #908404;
+}
+
+
+
+/*------------------------------- cards da formação academica-------------------------- */
+
+.cards .card{
+    border: 3px solid #908404;; 
+
+}
+.cards .card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    background-color: #555555;
+    color: white;
+    width: 300px;
+    max-height: 180px; 
+}
+.card .card-body a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.card .card-body a:hover{
+    color: rgb(0, 164, 234); /* Altera a cor do texto ao passar o mouse */ 
+    transition: color 0.4s; /* Suaviza a transição */ 
+}
+
+.img_fundo_texto .cards{
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaço entre os cards */
+}
+
+/*------------------ icones habilidades----------------------------*/
+
+.img_skills {
+    display: flex;
+    justify-content: center; /* Centraliza os elementos horizontalmente e deixa a margem nos cantos */
+    background: none !important; /* Remove qualquer fundo herdado da outra div acima */
+    flex-wrap: wrap; /* Permite que quebre linha se necessário */
+  
+}
+
+.img_skills div {
+    display: flex;
+    flex-direction: column; /* Mantém a imagem, texto e link empilhados em coluna */
+    padding: 50px;
+    align-items: center; /* Centraliza dentro do bloco */
+}
+
+.img_skills img {
+    width: 150px;
+}
+
+.img_skills h1 {
+    width: 100%; /* Garante que o h1 ocupe toda a largura da .img_skills */
+    text-align: center; /* Centraliza o texto do h1 */
+    padding: 20px;
+}
+
+.img_skills a {
+    margin-top: 1px; /* Adiciona um pequeno espaçamento entre o texto e o link */
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  .img_skills a:hover {
+    color: rgb(0, 164, 234); /* Altera a cor do texto ao passar o mouse */ 
+    transition: color 0.4s; /* Suaviza a transição */ 
+  }
+
+  .img_skills p{
+    color:#908404;
+}
+
+
+/* ------------------------- icone curriculo -----------------------------*/
+
+#curriculo {
+    display: flex;
+    justify-content: center;
+}
+
+#curriculo .card {
+    text-align: center;
+    width: 950px;
+    border: 3px solid #908404 ;
+    background-color: #555555;
+    color: white;
+}
+
+#curriculo .card .card-body a:hover{
+     color: rgb(0, 164, 234); /* Altera a cor do texto ao passar o mouse */ 
+     text-decoration: underline; /* Sublinha o texto */
+    transition: color 0.4s; /* Suaviza a transição */
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../style/index.css">
+</head>
+<body id="login-page">
+
+    <main id="container">
+        <form id="login-form" class="form" onsubmit="login(event)">
+            <h1>Login</h1>
+            <div class="input-box">
+                <div class="column">
+                    <input type="text" name="login" class="login" id="email" required placeholder="">
+                    <label for="email">Login:</label>
+                </div>
+                <div class="column">
+                    <input type="password" name="password" class="password" id="password" required placeholder="">
+                    <label for="password">Senha:</label>
+                </div>
+            </div>
+            <div class="enter-box">
+                    <button type="button" id="recover-password-button" class="forget" onclick="recoverPassword()">Esqueceu a senha?</button>
+                    <button type="button" target="_blank" class="forget" id="login-register-button" onclick="register()">Cadastre-se</button>
+                    <button type="submit" id="login-button" class="button">Login</button>
+                    <div class="error" id="email-required-error">Email é obrigatório</div>
+                    <div class="error" id="email-invalid-error">Email é inválido</div>
+                    <div class="error" id="password-required-error">Senha é obrigatória</div>
+                </div>
+            </form>
+        </main>
+
+    
+        <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+        <script src="../../script/src/controllers/firebase-init.js"></script>
+        <script src="../../script/src/login.js"></script>
+        <script src="../../script/src/controllers/validations.js"></script>
+        <script src="../../script/src/controllers/auth-guard.js"></script>
+        <script src="../../script/src/loading.js"></script>
+</body>
+</html>
+

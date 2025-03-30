@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doaja | Doações</title>
+    <link rel="stylesheet" href="../../style/index.css">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <!-- -- -->
+    
+    <!-- Semantic Ui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+
+    <link rel="shortcut icon" href="../../img/logo.svg" type="image/x-icon">
+    <script src="../../script/match.js" defer></script>
+</head>
+<body id="donations-page">
+    <header id="sidebar-donations">
+        <a href="../../index.html"><img class="logo" src="../../img/logo.svg" alt="logo"></a>
+        <nav class="sidebar-container">
+            <ul class="sidebar-content">
+                <li><a href="#">Moveis</a></li>
+                <li><a href="#">Eletrodomésticos</a></li>
+                <li><a href="#">Eletronicos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="donations-container">
+        <section class="card-donations-container">
+            <div class="card-donations">
+                <h2 id="card-title">Sofá</h2>
+                <img src="../../img/movel.jpg" alt="imagem" class="img-card-donation" id="card-img">
+                <div class="address-container">
+                    <i class="map marker alternate icon"></i>
+                    <p id="card-address">Av Puta Que Pariu, 69</p>
+                </div>
+                <button id="button-match" class="button-match">
+                    Match
+                    <i class="cart plus icon"></i>
+                </button>
+                <button id="match-details" class="match-details">
+                    Detalhes
+                    <i class="leaf icon"></i>
+                </button>
+            </div>
+            <div class="card-donations">
+                <h2 id="card-title">Sofá</h2>
+                <img src="../../img/movel.jpg" alt="imagem" class="img-card-donation" id="card-img">
+                <div class="address-container">
+                    <i class="map marker alternate icon"></i>
+                    <p id="card-address">Av Puta Que Pariu, 69</p>
+                </div>
+                <button id="button-match" class="button-match">
+                    Match
+                    <i class="cart plus icon"></i>
+                </button>
+                <button id="match-details" class="match-details">
+                    Detalhes
+                    <i class="leaf icon"></i>
+                </button>
+            </div>
+            <div class="ui modal" id="card-modal">
+                <i class="close icon"></i>
+                <div class="header">
+                  Doação
+                </div>
+                <div class="image content">
+                    <div class="ui large image" id="modal-image">
+
+                    </div>
+                  <div class="description">
+                    <div class="ui header" id="modal-title">We've auto-chosen a profile image for you.</div>
+                    <p id="modal-description">
+                        <!-- We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address. -->
+                    </p>
+                    <p id="modal-address"></p>
+                  </div>
+                </div>
+                <div class="actions">
+                  <div class="ui black deny button" id="deny-button">
+                    Nope
+                  </div>
+                  <div class="ui positive right labeled icon button" id="match">
+                    Yep, that's me
+                    <i class="checkmark icon"></i>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="../../script/src/controllers/firebase-init.js"></script>
+    <script src="../../script/src/home.js"></script>
+    
+</body>
+</html>
