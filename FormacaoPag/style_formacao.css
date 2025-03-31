@@ -153,3 +153,29 @@
      text-decoration: underline; /* Sublinha o texto */
     transition: color 0.4s; /* Suaviza a transição */
 }
+
+
+@media screen and (max-width: 600px) {
+    .img_skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .img_skills div {
+        width: 45%; /* Ajuste para duas colunas */
+        text-align: center;
+    }
+
+    .img_skills img {
+        width: 100px; /* Reduz o tamanho da imagem */
+        height: auto;
+    }
+
+    .img_skills a {
+        font-size: 14px; /* Diminui o tamanho do texto do link */
+        display: block;
+        text-align: center;
+    }
+}
