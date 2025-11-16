@@ -1,0 +1,3 @@
+[submodule "projetos/Previsao"]
+	path = projetos/Previsao
+	url = https://github.com/MatheusCanelutti/PrevisaoTempo.git
